@@ -1,0 +1,96 @@
+html {
+  background-image: url(bg-desktop.png);
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+}
+.sidebox {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 45px;
+}
+.sidebox p {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+.sidebox h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+}
+.button {
+  background-color: white;
+  border-radius: 28px;
+  cursor: pointer;
+  display: flex;
+  color: hsl(257, 40%, 49%);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  justify-content: center;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px hsl(257, 40%, 49%);
+  width: 40%;
+  margin-top: 20px;
+}
+.button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+svg {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 3%;
+  margin-left: 10px;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: self-end;
+}
+@media (max-width: 375px) {
+  .box {
+    flex-direction: column;
+  }
+  .sidebox {
+    width: 90%;
+    padding: 10px;
+  }
+  .sidebox h1 {
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+  }
+  .sidebox p {
+    text-align: center;
+    display: flex;
+    font-size: 13px;
+  }
+  .button {
+    width: 60%;
+    justify-content: center;
+    margin: 30px auto;
+  }
+  .logos {
+    justify-content: center;
+    width: 93%;
+    object-fit: cover;
+  }
+}
